@@ -3,7 +3,7 @@ Roblox Trash Simulator System (Spawner, Leaderstats, TrashScript )
 
 
 
-'Leaderstats'
+Leaderstats
 -- Leaderstats (ServerScriptService -> Leaderstats)
 game.Players.PlayerAdded:Connect(function(player)
 	-- leaderstats folder
@@ -25,7 +25,7 @@ game.Players.PlayerAdded:Connect(function(player)
 end)
 
 
-'HandleRemotes'
+HandleRemotes
 -- HandleRemotes (ServerScriptService)
 local remFolder = game.ReplicatedStorage:WaitForChild("GameRemotes")
 local addCoinsRemote = remFolder:WaitForChild("AddCoins")
@@ -65,7 +65,7 @@ upgradeRemote.OnServerEvent:Connect(function(player)
 end)
 
 
-'TrashSpawner'
+TrashSpawner
 local spawnDelay = 5      -- seconds between waves
 local spawnCount = 5      -- how many trash per wave
 local maxTrash = 50       -- max total trash
@@ -135,7 +135,7 @@ while true do
 	end
 end
 
-'trashScript'
+trashScript
 local trash = script.Parent
 local prompt = trash:WaitForChild("ProximityPrompt")
 local collected = false
